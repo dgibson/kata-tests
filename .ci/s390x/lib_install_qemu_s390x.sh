@@ -43,7 +43,7 @@ build_and_install_qemu() {
 	if [ ! -d "${GOPATH}/src/${QEMU_REPO_PATH}" ]; then
 		mkdir -p "${GOPATH}/src/${QEMU_REPO_PATH}"
 		pushd "${GOPATH}/src/${QEMU_REPO_PATH}"
-		chronic git clone "${QEMU_REPO}" "."
+		git clone "${QEMU_REPO}" "."
 		popd
 	fi
 
